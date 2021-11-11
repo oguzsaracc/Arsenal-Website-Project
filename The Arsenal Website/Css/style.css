@@ -1,0 +1,540 @@
+/* Font Part */
+@font-face {
+ font-family: Coolvetica;
+ src: url('../Fonts/Coolvetica.ttf');
+}
+
+@font-face {
+ font-family: Sansation;
+ src: url('../Fonts/Sansation.ttf');
+}
+
+@font-face {
+ font-family: LiberationSans;
+ src: url('../Fonts/LiberationSans.ttf');
+}
+
+/* Starting Part - Adding Font, Background fix */
+html{
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Verdana, Georgia, Serif; /*Stacking font-family */
+}
+
+/* Body Part - Giving a default font size */
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+.hide{
+	display:none;
+}
+
+/* Main Part - Giving Padding down to the page and fixing width */
+main{
+  width: 970px;
+  margin: 2rem auto;
+  padding-bottom: 10px;
+  color: inherit;
+  padding-top: 1rem;
+  background-color: rgba(255,255,255, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Class for Javascript - to show the navigation at Responsive Design */
+.active{
+  display: none;
+}
+
+/* Navigation Part - Fixing Logo, Adding Margin & Padding to Navigation Bar, Changing Font Family, Hamburger Menu addings */
+.pageNav{
+  font-size: 16px;
+  padding-bottom: 10px;
+  background-color:  rgba(219, 0, 7, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.navPages{
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+/* Fixing logo margin and displaying */
+.pageLogo{
+	text-decoration: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.navLink{
+
+  list-style-type: none;
+}
+/* Naviation link part - We added a font-family, font-size margin */
+.navLink li{
+  margin: 15px auto;
+  text-align: center;
+  font-family: Sansation;
+  font-size: 17px;
+}
+
+.hamburgerMenu{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Team Page Part - In this part, we use a technique like a card to explain Footballer. Transition used in that part for good-looking. Font family edited, Margin & Padding fixed. */
+.player{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.playTitle:hover{
+  color: rgba(6, 54, 114, 1);
+  transition: 0.5s;
+}
+
+.pageTeam{
+  display: inline-block;	
+  text-align: center;
+  margin: 0px 41px;
+  font-family: LiberationSans;
+  font-size: 18px;
+}
+
+.playerButton{
+  color: #FFFFFF;
+  background-color: #DB0007;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  font-family: LiberationSans;
+  font-size: 16px;
+}
+
+.playerButton:hover{
+  background-color: rgba(6, 54, 114, 0.8);
+  transition: 0.6s;
+}
+
+.playerNumber{
+  font-family: Sansation;
+  font-size: 40px;
+  float: right;
+  padding-right: 5px;
+  color: rgba(192, 192, 192, 0.9);
+}
+
+.playerContainer p{
+  border-bottom: 1.5px dotted rgba(6, 54, 114, 1);
+}
+
+.playerContainer h3{
+  background-color: rgba(6, 54, 114, 0.7);
+}
+
+.playerContainer h3:hover{
+  background-color: rgba(6, 54, 114, 0.9);
+  transition: 0.5s;
+  color: #FFFFFF;
+}
+
+.playerImage img{
+  border-bottom: 2px solid #DB0007;
+}
+
+/* This part for Honour page - Fixing position of images, changing font-family, font-size to h1,h2,p. */
+/* Fixing Paragraphs */
+.artic p{
+  font-size: 16px;
+  font-family: LiberationSans;
+  margin-left: 20px;
+  margin-top: 10px;
+  letter-spacing: .03em;
+  padding-right: 5px;
+}
+
+.artic h1{
+  font-family: Coolvetica;
+  font-size: 75px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.artic h1:hover,.artic h2:hover{
+  color: rgba(6, 54, 114, 1);
+  transition: 0.5s;
+}
+
+.artic h2, .playTitle{
+  font-family: Coolvetica;
+  font-size: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
+  margin-left: 10px;
+  letter-spacing: .05em
+}
+/* Bordered, fixed margin images */
+.articbody img{
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #DB0007;
+  opacity: 0.8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articbody img:hover{
+  opacity: 1;
+}
+
+/* Stadium Part - We used a Slick in here to making slide of Emirates Stadium photos */
+.wrapper{
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.wrapper h2:hover{
+  color: rgba(6, 54, 114, 1);
+  transition: 0.5s;
+}
+
+.wrapper h2{
+  font-family: Coolvetica;
+  font-size: 75px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  text-align: center;	
+}
+
+.slickMain{
+  margin: 0 auto;
+  width: 95%;
+}
+
+.slick-slide img{
+  border: 1.5px solid #FFFFFF;
+}
+
+.slickMain img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Stadium Part - Fixing image position, rotate. font-family, font-size added for <p> and <h2> */
+.articStadium img{
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+  transform: rotate(8deg);
+  border-radius: 10%;
+}
+
+.articStadium img:hover{
+  transition: 1.2s;
+  transform: scale(1.8);
+}
+
+.imageBig img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+}
+
+.imageBig img:hover{
+  transition: 1s;
+  transform: scaleX(1.2);
+}
+
+/* Hall of Fame Part - Video */
+.articVideo video{
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #DB0007;
+}
+
+.articHall img{
+  margin: 0 15px;
+  padding-left: 35px;
+}
+
+.articHall a{
+  font-family: LiberationSans;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  margin: 0px 0px 0px 10px;
+}
+
+.articHall a:hover{
+  color: rgba(6, 54, 114, 1);
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+/* Hall Of Fame Part */
+/* We used a content part for to showing user which heading we have it  */
+.hallTitles{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hallTitles h3{
+  margin: 0;
+  padding: 0;
+  font-family: LiberationSans;
+  font-size: 27px;
+}
+
+.hallTitles ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hallTitles li{
+  border-bottom: 1.5px solid #063672;
+}
+
+.hallTitles li:last-child{
+  border: none;
+}
+
+.hallTitles li a{
+  color: #000000;
+  font-family: LiberationSans;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+}
+
+.hallTitles li a:hover {
+  transition: 0.3s;
+  font-size: 22px;
+    color: #DB0007;
+}
+
+/* Footer Part - Positioning, Border & Background fixing */
+.footerSticky{
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 3px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.footerSticky a{
+  text-decoration: none;
+  display: inline-block;
+  width: 85px;
+  height: 50px;
+}
+
+.footerSticky img:hover{
+  transition: 2s;
+  transform: rotate(720deg);
+}
+
+/* Coding for the home.html carousel */
+.hide{
+	display:none;
+}
+
+.show{
+	display: block;
+}
+
+.pictures img{
+	float:middle;
+	width:80%;
+}
+
+/* Coding for developer.html */
+
+.developer img{
+	float:right;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+.bio p{
+	float:right;
+}
+
+.developer img{
+	float:right;
+	padding-right: 20px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+#content h3{
+	padding-left:10px;
+}
+
+/* Code for contact.html */
+
+input {
+	width:80%;
+	margin:10px;
+	padding: 30px 20px;
+	border: 2px solid #DB0007 ;
+	border-radius: 5px;
+}
+
+#contact button {
+
+	background-color: #DB0007;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	font-family: Verdana, Georgia, Serif;
+	font-weight: bold;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+#contact button:hover {
+	background-color: rgba(6, 54, 114, 0.8);
+	transition: 0.6s;
+}
+
+
+/* Responsive Design for Navigation Bar */
+@media screen and (min-width: 750px){
+  .pageNav{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 65px;
+	padding-bottom: 0px;
+  }	
+  
+  .navLink{
+    display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	margin-right: 28px;
+  }
+  
+  .navLink li{
+    margin: 0;
+  }
+  
+  .pageLogo{
+    margin-top: 45px;
+  }
+  
+  .navPages{
+    margin-left: 35px;
+  }
+  
+  .navPages:hover{
+    color: rgba(255, 255, 255, 0.8);
+	border-bottom: 1.5px solid #FFFFFF;
+	transition: 0.2s;
+  }
+  
+  .hamburgerMenu{
+    display: none;
+  }
+}
+
+/* General Responsive Design on all pages */
+@media screen and (max-width: 550px){
+	main{
+		float: none;
+		width: 100%;
+	}
+	
+	img{
+	margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    display: block;
+    padding: 5px 0;
+	}
+	
+	video{
+	  width: 100%;
+	  height: auto;
+	}
+	
+    .slick-prev:before{
+       display:none;
+    }
+	
+    [dir='rtl'] .slick-prev:before{
+      display:none;
+    }
+
+    .slick-next:before{
+      display:none;
+    }
+	
+    [dir='rtl'] .slick-next:before{
+      display:none;
+    }
+    
+	}
+	
+@media screen and (max-width: 1000px){
+	main{
+		float: none;
+		width: 100%;
+	}
+	
+	img{
+	margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    display: block;
+    padding: 5px 0;
+	}
+	
+	video{
+	  width: 100%;
+	  height: auto;
+	}
+	
+    .slick-prev:before{
+       display:none;
+    }
+	
+    [dir='rtl'] .slick-prev:before{
+      display:none;
+    }
+
+    .slick-next:before{
+      display:none;
+    }
+	
+    [dir='rtl'] .slick-next:before{
+      display:none;
+    }
+    
+	}
